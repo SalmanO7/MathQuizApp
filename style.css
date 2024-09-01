@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --prime: green;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    background-image: url(./background.webp);
+    height: 100vh;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.box {
+    height: 320px;
+    width: 600px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background: rgba(242, 240, 240, 0.46);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px;
+}
+
+.box h2 {
+    font-weight: 800;
+    font-size: 27px;
+    color: #333;
+}
+
+.box h3 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#questionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+#ansInput {
+    background: transparent;
+    border: none;
+    box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.41);
+    border-radius: 10px;
+    height: 40px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#ansInput:focus-visible {
+    outline: 1px solid #333;
+}
+
+.btn {
+    height: 40px;
+    font-size: 20px;
+    color: #333;
+    background: #ffff;
+    border-radius: 10px;
+    font: bold;
+    border: none;
+    box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.41);
+}
+
+.btn:hover {
+    color: #ffff;
+    background: #333;
+    transition: .5s ease-out;
+}
+@media screen and (max-width: 768px) {
+    .box{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+ 
+.box h2 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.box h3 {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+}

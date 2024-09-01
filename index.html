@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Question_Game</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="background">
+        <div class="box">
+            <h2>Score => <span id="score">0</span></h2>
+            <h3 id="question"></h3>
+            <form id="questionForm" onsubmit="checkAnswer(event)">
+                <input type="number" required id="ansInput" name="answer">
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
